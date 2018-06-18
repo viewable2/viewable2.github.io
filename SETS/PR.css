@@ -1,0 +1,81 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+body
+{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  height: 1180px;
+}
+nav {
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px#000;
+  box-shadow: 0 0 5px #000;
+}
+nav img{
+  width: 30px;
+}
+.container5 {
+  flex: 1 0 auto;
+  clear: both;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+aside{
+ position: absolute;
+ float: left;
+ width: 500px;
+ border: 5px solid #73AD21;
+ padding: 10px;
+ height: 800px;
+ padding-left: 20px;
+ background: black;
+}
+.card-header{
+  border: 5px solid #73AD21;
+}
+article{
+  float: right;
+  width: 1000px;
+  border: 5px solid #73AD21;
+  padding: 10px;
+  height: 800px;
+  padding-left: 20px;
+   background: black;
+}
+.footer {
+  flex-shrink: 0;
+  clear: both;
+  color: rgba(255, 255, 255, .5);
+  line-height: 15px;
+  font-size: 12px;
+  position: relative;
+  text-shadow: 1px 1px 1px #000;
+  border-top: #000;
+  background-color: rgba(3,3,3,.5);
+}
+.footer h3{
+  font-size: 21px;
+}
+.footer a{
+  color: inherit;
+}
+.footer a:hover{
+  color: green;
+}
+.footer a:active{
+  color: inherit;
+}
+#footer-left {
+ float: left;
+ padding-left: 15px;
+ text-align: left;
+}
+#footer-right{
+  float: right;
+  padding-right: 15px;
+  text-align: right;
+}
