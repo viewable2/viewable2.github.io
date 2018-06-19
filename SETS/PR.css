@@ -1,12 +1,9 @@
-header, section, footer, aside, nav, main, article, figure {
-    display: block;
-}
-body
-{
+body{
   margin: 0;
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
+  background: url("waa.png");
   height: 1180px;
 }
 nav {
@@ -17,34 +14,65 @@ nav {
 nav img{
   width: 30px;
 }
-.container5 {
+.header {
+    padding-top: 60px;
+    text-align: center;
+    background: white;
+}
+.Main-body {
   flex: 1 0 auto;
   clear: both;
-  padding-top: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-top: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
-aside{
- position: absolute;
+.card-first{
  float: left;
- width: 500px;
- border: 5px solid #73AD21;
- padding: 10px;
+ position: absolute;
+ width: 25%;
  height: 800px;
- padding-left: 20px;
- background: black;
 }
-.card-header{
-  border: 5px solid #73AD21;
-}
-article{
+.card-second{
   float: right;
-  width: 1000px;
+  width: 70%;
   border: 5px solid #73AD21;
-  padding: 10px;
   height: 800px;
-  padding-left: 20px;
-   background: black;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.card-for-first {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  padding: 20px;
+  height: inherit;
+}
+.card-for-sec{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.Main-body:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .footer {
   flex-shrink: 0;
@@ -78,4 +106,10 @@ article{
   float: right;
   padding-right: 15px;
   text-align: right;
+}
+@media screen and (max-width: 800px) {
+    .card-for-first, .card-for-sec, .footer {
+        width: 100%;
+        padding: 0;
+    }
 }
