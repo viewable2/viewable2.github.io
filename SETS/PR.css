@@ -108,8 +108,13 @@ nav img{
   text-align: right;
 }
 @media screen and (max-width: 800px) {
-    .card-for-first, .card-for-sec, .footer {
-        width: 100%;
-        padding: 0;
+    .card-for-first, .card-for-sec {
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 400px) {
+     .footer {
+      display: none;
     }
 }
