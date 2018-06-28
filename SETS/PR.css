@@ -1,0 +1,120 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background: url("waa.png");
+  height: 1180px;
+}
+nav {
+  -moz-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 5px#000;
+  box-shadow: 0 0 5px #000;
+}
+nav img{
+  width: 30px;
+}
+.header {
+    padding-top: 60px;
+    text-align: center;
+    background: white;
+}
+.Main-body {
+  flex: 1 0 auto;
+  clear: both;
+  padding-top: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.card-first{
+ float: left;
+ position: absolute;
+ width: 25%;
+ height: 800px;
+}
+.card-second{
+  float: right;
+  width: 70%;
+  border: 5px solid #73AD21;
+  height: 800px;
+}
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.card-for-first {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  padding: 20px;
+  height: inherit;
+}
+.card-for-sec{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.Main-body:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+  flex-shrink: 0;
+  clear: both;
+  color: rgba(255, 255, 255, .5);
+  line-height: 15px;
+  font-size: 12px;
+  position: relative;
+  text-shadow: 1px 1px 1px #000;
+  border-top: #000;
+  background-color: rgba(3,3,3,.5);
+}
+.footer h3{
+  font-size: 21px;
+}
+.footer a{
+  color: inherit;
+}
+.footer a:hover{
+  color: green;
+}
+.footer a:active{
+  color: inherit;
+}
+#footer-left {
+ float: left;
+ padding-left: 15px;
+ text-align: left;
+}
+#footer-right{
+  float: right;
+  padding-right: 15px;
+  text-align: right;
+}
+@media screen and (max-width: 800px) {
+    .card-for-first, .card-for-sec {
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 400px) {
+     .footer {
+      display: none;
+    }
+}
