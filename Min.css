@@ -1,0 +1,113 @@
+body html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: normal 1em/1.4 Open Sans,sans-serif;
+    font-size: 14px;
+    color: #eee;
+    background: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.top{display: inline-block;}
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 5px; 
+}
+.wrap{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    min-height: 40vh;
+    height: 40vh;
+    background: #222;
+}
+.circle{
+    display: flex; 
+    justify-content: flex-end;
+    padding: 6px 4px;
+    font-size: .688em;
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.circle a{
+    text-decoration: none;
+    color: #666;
+}
+.words{
+    display: flex;
+    display: -webkit-flex; 
+    justify-content: center;
+    -webkit-flex-direction: column; 
+    flex-direction: column;
+    -webkit-align-items: center; 
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    z-index: 2;
+}
+h1{
+    font-size: 6em;
+    font-weight: 800;
+    line-height: 1em;
+    letter-spacing: .035em;
+    margin: 0 0 10px;
+}
+h2{
+    font-family: Unica One,cursive;
+    font-size: 1.125em;
+    font-weight: 400;
+    letter-spacing: .025em;
+    color: #ccc;
+    margin: 0 0 0 -3px;
+}
+h1 span{
+    font-weight: 300; letter-spacing: .06em; margin-left: 3px;}
+h2 span{display: block;}
+a:hover {
+    -webkit-animation: flash .4s forwards;
+    animation: flash .4s forwards;
+    color: #bba279;
+}
+ul a{
+    padding: 6px 4px;
+    font-size: .688em;
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li{display: inline-block;}
+ul{
+    position: fixed;
+    bottom: 30px;
+    left: 40px;
+    right: 40px;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+@media screen and (min-width: 601px) {
+  .words {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .words {
+    font-size: 8px;
+  }
+}
